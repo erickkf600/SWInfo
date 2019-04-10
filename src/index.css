@@ -6,9 +6,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('star.jpg');
+  background-size: cover 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.listbtn{
+  float: left;
+  color: #ccc;
+  border: 1px solid #ccc
+}
+.listbtn:hover{
+  color: #FFC500;
+  border-color: #FFC500 
+}
+.logo{
+  margin-right: 7rem;
+  width: 30%;
+}
+.card{
+  background: rgba(255,255,255,0.13);
+  border: 3px solid #FFC500;
+  width: 70%;
+  margin: 0 auto;
+  color: #FFC500
+}
+.card-header, .card-footer{
+  border-color: #ccc;
+}
+.card p{
+  font-weight: bold;
+  font-size: 25px;
+}
+.card span{
+  float: right;
+  font-weight: bold;
+  font-size: 30px
+}
+#collapse{
+  cursor: pointer
+}
+.next{
+  color: #000;
+  background: #FFC500;
+  width: 40%;
+  border: solid 2px #FFC500;
+  font-size: 16px;
+  font-weight: 600
+}
+.next:hover{
+  background: transparent;
+  color: #FFC500 
+}
+
+@media screen and (max-width:1024px){
+  .card{
+    width: 85%;
+    margin: 10rem auto 
+  }
+}
+
+@media screen and (max-width:610px){
+  .card{
+    min-width: 100%;
+    margin: 0 auto;
+  } 
+  .logo{
+    width: 20rem;
+    margin: 10px 0 0 0;  
+  }
+
+  .card span{
+    font-size: 25px
+  }
+}
+
