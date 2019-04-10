@@ -14,6 +14,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/*BOTÃO DE LISTAR*/
 .listbtn{
   float: left;
   color: #ccc;
@@ -23,10 +24,12 @@ code {
   color: #FFC500;
   border-color: #FFC500 
 }
+/*LOGO STAR WARS*/
 .logo{
   margin-right: 7rem;
   width: 30%;
 }
+/*ESTILO DO CARD*/
 .card{
   background: rgba(255,255,255,0.13);
   border: 3px solid #FFC500;
@@ -46,9 +49,21 @@ code {
   font-weight: bold;
   font-size: 30px
 }
+/*FILMES*/
 #collapse{
   cursor: pointer
 }
+/*ANIMAÇÃO*/
+.anime{
+  position:relative;
+  animation: arrow 0.5s ease-in-out infinite alternate
+}
+@keyframes arrow{
+  0%{top:0}
+  100%{top:10px}
+}
+
+/*BOTÃO PRÓXIMO*/
 .next{
   color: #000;
   background: #FFC500;
@@ -62,13 +77,14 @@ code {
   color: #FFC500 
 }
 
+/*TABLETS*/
 @media screen and (max-width:1024px){
   .card{
     width: 85%;
     margin: 10rem auto 
   }
 }
-
+/*CELULARES*/
 @media screen and (max-width:610px){
   .card{
     min-width: 100%;
