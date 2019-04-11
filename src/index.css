@@ -14,19 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/*BOTÃO DE LISTAR*/
-.listbtn{
-  float: left;
-  color: #ccc;
-  border: 1px solid #ccc
-}
-.listbtn:hover{
-  color: #FFC500;
-  border-color: #FFC500 
-}
+
 /*LOGO STAR WARS*/
 .logo{
-  margin-right: 7rem;
   width: 30%;
 }
 /*ESTILO DO CARD*/
@@ -66,15 +56,15 @@ code {
 /*BOTÃO PRÓXIMO*/
 .next{
   color: #000;
-  background: #FFC500;
+  background: #ccc;
   width: 40%;
-  border: solid 2px #FFC500;
+  border: solid 2px #ccc;
   font-size: 16px;
   font-weight: 600
 }
 .next:hover{
   background: transparent;
-  color: #FFC500 
+  color: #ccc 
 }
 
 /*TABLETS*/
@@ -92,7 +82,6 @@ code {
   } 
   .logo{
     width: 20rem;
-    margin: 10px 0 0 0;  
   }
 
   .card span{
