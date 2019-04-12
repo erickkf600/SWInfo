@@ -20,9 +20,9 @@ class Game extends Component {
             console.log(arrays);
             this.setState({ planets: arrays });
         })
-            .catch(error => {
-                console.log('OCORREU UM ERRO', error);
-            });
+        .catch(error => {
+            console.log('OCORREU UM ERRO', error);
+        });
     }
     componentDidMount() {
         this.getPlanets()
