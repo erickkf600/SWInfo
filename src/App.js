@@ -8,7 +8,8 @@ class App extends Component {
       planets: [],
     }
   }
-
+ //CHAMANDO A API E GERANDO UM NUMERO FINAL ALEATORIO ENTE 1 E 61
+ //Nisso foi gerado 1 obejto com as info. Por tanto tive que converter em um array novamente
   getPlanets(){
       const aleatorio = Math.floor((Math.random() * 61) + 1)
       const urlApi = 'https://swapi.co/api/planets/' + aleatorio   
@@ -30,7 +31,7 @@ class App extends Component {
     this.getPlanets()
     
   }
-  //window.location.reload();
+  
   render() {
     const {planets} = this.state;
     return (
@@ -45,6 +46,7 @@ class App extends Component {
                     <p className="text-left">Populção: <span>{p.population}</span></p>
                     <p className="text-left">Clima: <span>{p.climate}</span></p>
                     <p className="text-left">Terreno: <span>{p.terrain}</span></p>
+                    <p className="text-left">Aparições: <span>{p.films.length}</span></p>
                   </div>
                   <div className="card-footer text-center p-3">
                     <button className="btn next" onClick={() => this.proximo()} id="proximo">PRÓXIMO</button>
