@@ -1,0 +1,48 @@
+#card
+  background: rgba(255,255,255,0.1)
+  border: 3px solid #FFC500
+  width: 75%
+  margin: 0 auto
+  color: #fff  
+  @include tablet-mini
+    width: 100%
+    padding: 0
+  .card-header
+    border-bottom: 1.5px solid #ccc  
+    font-family: 'Anton', sans-serif  
+    @extend %spacing  
+  ul
+    li  
+      background: transparent
+      border-bottom: .5px solid #3f3f3f
+      &:last-child
+        border-bottom: 1.5px solid #ccc 
+      font:
+        weight: bold
+        size: 25px 
+      @include celular-md
+        font-size: 20px     
+      span
+        float: right
+        @extend %color-amarelo
+        @include celular-md
+          font-size: 17px
+          line-height: 40px
+  button
+    color: #000
+    padding: .6rem 0 .6rem 0
+    background: #ccc
+    width: 40%
+    border: solid 2px #ccc
+    @extend %spacing
+    font:
+      family: 'Anton', sans-serif    
+      size: 16px
+      weight: 400  
+    &:hover
+      background: transparent
+      color: #ccc
+    &:focus
+      box-shadow: none              
+     
+          

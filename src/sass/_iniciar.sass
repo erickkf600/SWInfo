@@ -1,0 +1,49 @@
+#start
+  display: flex
+  justify-content: center
+  position: absolute
+  top: 50%
+  left: 0
+  right: 0
+  .iniciar  
+    background: transparent
+    color: #000
+    z-index: 1
+    width: 30rem
+    padding: 2rem 0 2rem 0
+    @extend %spacing
+    font:
+      size: 35px
+      weight: bold
+      family: 'Anton', sans-serif 
+    @include full-hd
+      font-size: 40px
+      width: 35rem  
+    @include celular
+      width: 20rem  
+#start svg,
+#start svg rect
+  position: absolute
+  display: flex
+  justify-content: center
+  width: 30rem
+  height: 100%
+  fill: $amarelo
+  border-radius: 5px
+  @include full-hd
+    width: 35rem
+  @include celular
+    width: 20rem
+
+#start svg rect
+  stroke: #fff
+  stroke-width: 15px
+  stroke-dasharray: 400
+  @include animacao( animate 3s linear infinite)  
+  @include keyframe( animate )
+    0%
+      stroke-dashoffset: 800
+    100%
+      stroke-dashoffset: 0 
+
+

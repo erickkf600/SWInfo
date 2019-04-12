@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Anton')
+//MIXINS
+@mixin back($escolha)
+  background-image: $escolha
+  background-size: 100%
+  background-attachment: fixed
+//EXTENDS
+%back-amarelo
+  background: #FFC500
+%color-amarelo
+  color: #FFC500
+%spacing
+  letter-spacing: 2px    
+
+//VARIAVEIS  
+$amarelo: #FFC500 
+
+//MEDIA QUERIES
+@mixin full-hd
+  @media screen and (min-width:1920px)
+    @content     
+    
+@mixin tablet
+  @media screen and (max-width:1024px)
+    @content
+
+@mixin tablet-mini
+  @media screen and (max-width:768px)
+    @content
+
+@mixin celular
+  @media screen and (max-width:610px)
+    @content
+   
+@mixin celular-md
+  @media screen and (max-width:480px)
+    @content
+
+@mixin celular-s
+  @media screen and (max-width:380px)
+    @content
+          
+@mixin celular-xs
+  @media screen and (max-width:320px)
+    @content      
+
+//ANIMAÇÃO
+@mixin animacao($anime) 
+  -webkit-animation: $anime
+  -moz-animation: $anime
+  -ms-animation: $anime
+  animation: $anime  
+@mixin keyframe($movimento) 
+  @-webkit-keyframes #{$movimento}
+    @content
+  @-moz-keyframes #{$movimento}
+    @content
+  @-o-keyframes #{$movimento}
+    @content
+
+//CHAMADAS  
+@import "body" 
+@import "header"
+@import "iniciar"  
+@import "game" 
+
